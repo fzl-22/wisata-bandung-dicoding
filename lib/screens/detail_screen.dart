@@ -35,7 +35,10 @@ class DetailScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Image.asset(place.imageAsset),
+            Hero(
+              tag: "header-image",
+              child: Image.asset(place.imageAsset),
+            ),
             Container(
               margin: const EdgeInsets.only(top: 16),
               child: Text(
